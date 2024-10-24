@@ -34,6 +34,9 @@ export const getAbout = async (locale) => {
     query About {
       abouts(first: 1) {
         video
+        thumbnail {
+          url
+        }
         localizations(includeCurrent: true, locales: ${locale}) {
           description {
             html
@@ -78,6 +81,36 @@ export const getHomePrograms = async (locale) => {
     return response.programs;
   } catch (error) {
     console.error("Error fetching home programs:", error);
+    return {};
+  }
+};
+
+// get programs
+export const getPrograms = async (locale) => {
+  const query = gql`
+    query Programs {
+      programs(orderBy: date_ASC, first: 500) {
+        cover {
+          url
+        }
+        slug
+        video
+        date
+        localizations(locales: ${locale}, includeCurrent: true) {
+          title
+          description {
+            html
+          }
+        }
+      }
+    }
+  `;
+
+  try {
+    const response = await graphQLClient.request(query);
+    return response.programs;
+  } catch (error) {
+    console.error("Error fetching programs:", error);
     return {};
   }
 };

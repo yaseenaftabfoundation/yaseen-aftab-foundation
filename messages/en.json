@@ -32,7 +32,7 @@
     },
 
     "ProgramsSection": {
-      "heading": "Our latest programs",
+      "heading": "Latest programs",
       "action": "Discover all programs",
       "view": "View program"
     },
@@ -48,7 +48,8 @@
   },
 
   "ProgramsPage": {
-    "heading": "Programs"
+    "heading": "Programs",
+    "view": "View program"
   },
 
   "AboutPage": {

@@ -5,6 +5,7 @@ import { Link } from "@/i18n/routing";
 import MandalaBg from "@/assets/mandala-bg.png";
 import QuranBg from "@/assets/quran-bg.jpg";
 import Image from "next/image";
+import Video from "../shared/Video";
 
 const AboutSection = ({ about }) => {
   const t = useTranslations("HomePage.AboutSection");
@@ -26,7 +27,7 @@ const AboutSection = ({ about }) => {
 
     video: {
       container: `col-span-2 w-full h-full p-20 laptop:px-10 mobile:px-5 relative`,
-      wrapper: `w-full aspect-video rounded-xl overflow-hidden relative z-[1]`,
+      thumbnail: `w-full aspect-video rounded-xl overflow-hidden relative z-[1]`,
     },
   };
   return (
@@ -74,17 +75,12 @@ const AboutSection = ({ about }) => {
         />
 
         {/* wrapper */}
-        <div className={styles.video.wrapper}>
-          <iframe
-            width="100%"
-            height="100%"
-            src={getIframeURL(about.video)}
-            title="Yaseen Aftab Foundation's Introduction Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <Video
+          thumbnail={about.thumbnail.url}
+          video={about.video}
+          thumbnailSize="100vw"
+          thumbnailStyles={styles.thumbnail}
+        />
       </div>
     </section>
   );

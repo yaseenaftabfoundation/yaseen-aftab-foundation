@@ -19,7 +19,10 @@ const ProgramsSection = ({ programs, locale }) => {
       action: `mobile:hidden`,
     },
 
-    programs: `grid grid-cols-3 mobile:grid-cols-1 gap-x-5 gap-y-11 pt-6`,
+    programs: {
+      container: `grid grid-cols-3 mobile:grid-cols-1 gap-x-5 gap-y-11 pt-6`,
+      action: `hidden mobile:block w-full`,
+    },
   };
 
   return (
@@ -28,7 +31,7 @@ const ProgramsSection = ({ programs, locale }) => {
       <div className={styles.heading.container}>
         {/* title */}
         <h2 className={styles.heading.title}>{t("heading")}</h2>
-        {/* action */}
+        {/* action for desktop */}
         <Link href="/programs">
           <Button variant="outlined" size="lg" className={styles.heading.action}>
             {t("action")}
@@ -37,7 +40,7 @@ const ProgramsSection = ({ programs, locale }) => {
       </div>
 
       {/* programs */}
-      <div className={styles.programs}>
+      <div className={styles.programs.container}>
         {programs.map((program) => (
           <ProgramCard
             key={program.slug}
@@ -51,6 +54,13 @@ const ProgramsSection = ({ programs, locale }) => {
             locale={locale}
           />
         ))}
+
+        {/* action for mobile */}
+        <Link href="/programs">
+          <Button variant="outlined" size="lg" className={styles.programs.action}>
+            {t("action")}
+          </Button>
+        </Link>
       </div>
     </section>
   );
