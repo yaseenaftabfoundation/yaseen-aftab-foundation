@@ -21,7 +21,7 @@ const HomePage = async ({ params: { locale } }) => {
       {/* intro section */}
       <AboutSection about={about} />
       {/* phylosophy section */}
-      <PhilosophySection />
+      {/* <PhilosophySection /> */}
       {/* programs section */}
       <ProgramsSection programs={programs} locale={locale} />
       {/* gallery section */}

@@ -19,7 +19,7 @@ const ProgramsSection = ({ programs, locale }) => {
       action: `mobile:hidden`,
     },
 
-    programs: `grid grid-cols-3 gap-x-5 gap-y-11 pt-6`,
+    programs: `grid grid-cols-3 mobile:grid-cols-1 gap-x-5 gap-y-11 pt-6`,
   };
 
   return (
