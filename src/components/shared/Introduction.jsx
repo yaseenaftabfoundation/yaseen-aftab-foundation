@@ -1,4 +1,4 @@
-import { getIframeURL } from "@/utils/getIframeURL";
+import Video from "./Video";
 
 const Introduction = ({ about }) => {
   // introduction styles
@@ -20,15 +20,8 @@ const Introduction = ({ about }) => {
     <section className={styles.section}>
       {/* wrapper */}
       <div className={styles.video}>
-        <iframe
-          width="100%"
-          height="100%"
-          src={getIframeURL(about.video)}
-          title="Yaseen Aftab Foundation's Introduction Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+        {/* intro video */}
+        <Video thumbnail={about.thumbnail.url} video={about.video} thumbnailSize="100vw" />
       </div>
 
       {/* about content */}

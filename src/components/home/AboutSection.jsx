@@ -1,4 +1,3 @@
-import { getIframeURL } from "@/utils/getIframeURL";
 import { useTranslations } from "next-intl";
 import { Button } from "@/app/material";
 import { Link } from "@/i18n/routing";
@@ -27,7 +26,7 @@ const AboutSection = ({ about }) => {
 
     video: {
       container: `col-span-2 w-full h-full p-20 laptop:px-10 mobile:px-5 relative`,
-      thumbnail: `w-full aspect-video rounded-xl overflow-hidden relative z-[1]`,
+      thumbnail: `w-full aspect-video rounded-xl relative z-[1]`,
     },
   };
   return (
@@ -74,13 +73,8 @@ const AboutSection = ({ about }) => {
           className={styles.background}
         />
 
-        {/* wrapper */}
-        <Video
-          thumbnail={about.thumbnail.url}
-          video={about.video}
-          thumbnailSize="100vw"
-          thumbnailStyles={styles.thumbnail}
-        />
+        {/* intro video */}
+        <Video thumbnail={about.thumbnail.url} video={about.video} thumbnailSize="100vw" />
       </div>
     </section>
   );
