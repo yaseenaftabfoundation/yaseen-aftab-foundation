@@ -1,0 +1,59 @@
+/* import tailwind styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import library styles */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/* base */
+@layer base {
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+/* utilities */
+@layer utilities {
+  /* ---------- typography ---------- */
+  .heading-02 {
+    @apply text-[48px] laptop:text-[40px] mobile:text-[28px] font-semibold mobile:font-bold leading-none capitalize;
+  }
+
+  .heading-03 {
+    @apply text-[24px] laptop:text-[20px] mobile:text-[18px] font-semibold leading-none capitalize;
+  }
+
+  .heading-04 {
+    @apply text-[16px] mobile:text-[14px] font-semibold leading-none capitalize;
+  }
+
+  .subheading {
+    @apply text-lg mobile:text-base font-medium;
+  }
+
+  .label {
+    @apply text-base font-medium leading-none;
+  }
+
+  .paragraph {
+    @apply text-base mobile:text-sm font-normal leading-loose mobile:leading-loose;
+  }
+
+  /* ---------- miscellaneous ---------- */
+  .text-justify-forced {
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
+  }
+}

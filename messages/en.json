@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "name": "Yaseen Aftab Foundation",
+    "home": "Home",
+    "gallery": "Gallery",
+    "programs": "Programs",
+    "about": "About",
+    "contact": "Contact",
+    "locale": "Language"
+  },
+
+  "Footer": {
+    "year": "2024",
+    "copyright": "All rights reserved",
+    "credit": "Designed & Developed by",
+    "author": "Ashraf Asif"
+  },
+
+  "HomePage": {
+    "HeroSection": {
+      "programs": "Our Programs",
+      "gallery": "Gallery"
+    },
+
+    "AboutSection": {
+      "heading": "About us",
+      "action": "Discover more"
+    },
+
+    "PhilosophySection": {
+      "heading": "Our philosophy"
+    },
+
+    "ProgramsSection": {
+      "heading": "Our latest programs",
+      "action": "Discover all programs",
+      "view": "View program"
+    },
+
+    "GallerySection": {
+      "heading": "Our gallery",
+      "action": "Explore gallery"
+    }
+  },
+
+  "GalleryPage": {
+    "heading": "Gallery"
+  },
+
+  "ProgramsPage": {
+    "heading": "Programs"
+  },
+
+  "AboutPage": {
+    "heading": "About",
+    "members": "Members"
+  },
+
+  "ContactPage": {
+    "heading": "Contact",
+    "info": "Get in touch",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+
+  "PreviewPage": {
+    "heading": "Preview"
+  }
+}

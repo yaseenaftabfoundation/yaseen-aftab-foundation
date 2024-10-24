@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "name": "ইয়াসীন আফতাব ফাউন্ডেশন",
+    "home": "মূলপাতা",
+    "gallery": "গ্যালারি",
+    "programs": "কার্যক্রম",
+    "about": "পরিচিতি",
+    "contact": "যোগাযোগ",
+    "locale": "ভাষা"
+  },
+
+  "Footer": {
+    "year": "২০২৪",
+    "copyright": "সর্বস্বত্ব সংরক্ষিত",
+    "credit": "ডিজাইন এবং ডেভেলপে",
+    "author": "আশরাফ আসিফ"
+  },
+
+  "HomePage": {
+    "HeroSection": {
+      "programs": "আমাদের কার্যক্রম",
+      "gallery": "গ্যালারি"
+    },
+
+    "AboutSection": {
+      "heading": "আমাদের সম্পর্কে",
+      "action": "বিস্তারিত জানুন"
+    },
+
+    "PhilosophySection": {
+      "heading": "আমাদের দর্শন"
+    },
+
+    "ProgramsSection": {
+      "heading": "আমাদের সাম্প্রতিক কার্যক্রম",
+      "action": "সব কার্যক্রম দেখুন",
+      "view": "বিস্তারিত দেখুন"
+    },
+
+    "GallerySection": {
+      "heading": "আমাদের গ্যালারি",
+      "action": "আলোকচিত্রসমূহ দেখুন"
+    }
+  },
+
+  "GalleryPage": {
+    "heading": "গ্যালারি"
+  },
+
+  "ProgramsPage": {
+    "heading": "কার্যক্রম"
+  },
+
+  "AboutPage": {
+    "heading": "পরিচিতি",
+    "members": "সদস্যবৃন্দ"
+  },
+
+  "ContactPage": {
+    "heading": "যোগাযোগ",
+    "info": "যোগাযোগের ঠিকানা",
+    "email": "ইমেইল",
+    "phone": "ফোন",
+    "location": "ঠিকানা"
+  },
+
+  "PreviewPage": {
+    "heading": "Preview"
+  }
+}

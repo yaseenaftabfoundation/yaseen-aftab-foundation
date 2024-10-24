@@ -1,0 +1,59 @@
+import { Link } from "@/i18n/routing";
+import { Button } from "@/app/material";
+import { useTranslations } from "next-intl";
+import ProgramCard from "../shared/ProgramCard";
+
+const ProgramsSection = ({ programs, locale }) => {
+  const t = useTranslations("HomePage.ProgramsSection");
+
+  // programs section styles
+  const styles = {
+    section: `
+      w-full max-w-[1400px] laptop:max-w-[1000px] tablet:max-w-[800px]
+      mx-auto px-5 mb-28 laptop:mb-24 mobile:mb-20
+    `,
+
+    heading: {
+      container: `flex items-center justify-between mb-12`,
+      title: `heading-02`,
+      action: `mobile:hidden`,
+    },
+
+    programs: `grid grid-cols-3 gap-x-5 gap-y-11 pt-6`,
+  };
+
+  return (
+    <section className={styles.section}>
+      {/* heading */}
+      <div className={styles.heading.container}>
+        {/* title */}
+        <h2 className={styles.heading.title}>{t("heading")}</h2>
+        {/* action */}
+        <Link href="/programs">
+          <Button variant="outlined" size="lg" className={styles.heading.action}>
+            {t("action")}
+          </Button>
+        </Link>
+      </div>
+
+      {/* programs */}
+      <div className={styles.programs}>
+        {programs.map((program) => (
+          <ProgramCard
+            key={program.slug}
+            cover={program.cover.url}
+            video={program.video}
+            title={program.localizations[0].title}
+            slug={program.slug}
+            date={program.date}
+            description={program.localizations[0].description.html}
+            view={t("view")}
+            locale={locale}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ProgramsSection;
