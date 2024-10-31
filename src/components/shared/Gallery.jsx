@@ -15,10 +15,10 @@ const Gallery = ({ gallery }) => {
     images: {
       container: `grid grid-cols-3 mobile:grid-cols-2 gap-5`,
       wrapper: `
-        w-full aspect-square rounded-xl  overflow-hidden shadow-lg cursor-pointer
+        w-full aspect-square rounded-xl overflow-hidden cursor-pointer
         relative hover:opacity-75 transition-opacity duration-300
       `,
-      image: `object-cover object-center `,
+      image: `object-cover object-center`,
     },
   };
 

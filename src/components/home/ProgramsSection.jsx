@@ -14,7 +14,7 @@ const ProgramsSection = ({ programs, locale }) => {
     `,
 
     heading: {
-      container: `flex items-center justify-between mb-12`,
+      container: `flex items-center justify-between mobile:justify-center mb-12`,
       title: `heading-02 mobile:text-center`,
       action: `mobile:hidden`,
     },

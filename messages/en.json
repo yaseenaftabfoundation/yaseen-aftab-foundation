@@ -12,7 +12,7 @@
   "Footer": {
     "year": "2024",
     "copyright": "All rights reserved",
-    "credit": "Designed & Developed by",
+    "credit": "Designed by",
     "author": "Ashraf Asif"
   },
 
@@ -28,7 +28,11 @@
     },
 
     "PhilosophySection": {
-      "heading": "Our philosophy"
+      "heading": "Our purpose",
+      "dawah": "Da'wah",
+      "purification": "Self-Purification",
+      "charity": "Sadaqah",
+      "service": "Community Service"
     },
 
     "ProgramsSection": {

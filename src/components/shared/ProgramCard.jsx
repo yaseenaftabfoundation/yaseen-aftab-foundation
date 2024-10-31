@@ -1,14 +1,13 @@
 import "moment/locale/bn";
 import "moment/locale/en-gb";
 import { Card, CardBody, CardFooter, CardHeader, Button } from "@/app/material";
-import Image from "next/image";
 import moment from "moment";
 import Video from "./Video";
 import { Link } from "@/i18n/routing";
 
 const ProgramCard = ({ cover, video, title, slug, date, description, view, locale }) => {
   return (
-    <Card className="w-full shadow-lg">
+    <Card className="w-full">
       <CardHeader color="blue-gray" className="relative">
         <Video thumbnail={cover} video={video} thumbnailSize="33vw" />
       </CardHeader>

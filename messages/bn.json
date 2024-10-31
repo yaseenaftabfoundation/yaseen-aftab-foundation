@@ -12,7 +12,7 @@
   "Footer": {
     "year": "২০২৪",
     "copyright": "সর্বস্বত্ব সংরক্ষিত",
-    "credit": "ডিজাইন এবং ডেভেলপে",
+    "credit": "ডিজাইন করেছে",
     "author": "আশরাফ আসিফ"
   },
 
@@ -28,7 +28,11 @@
     },
 
     "PhilosophySection": {
-      "heading": "আমাদের দর্শন"
+      "heading": "আমাদের উদ্দেশ্য",
+      "dawah": "দাওয়াহ",
+      "purification": "আত্মশুদ্ধি",
+      "charity": "সদকাহ",
+      "service": "সমাজসেবা"
     },
 
     "ProgramsSection": {

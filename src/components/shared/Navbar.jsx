@@ -26,7 +26,7 @@ const Navbar = () => {
     logo: {
       container: `hidden mobile:flex items-center gap-1`,
       brandmark: `h-8 -mt-2`,
-      wordmark: `text-sm font-bold text-black uppercase leading-none`,
+      wordmark: `text-[16px] font-bold text-black uppercase leading-none`,
     },
 
     navigation: {
