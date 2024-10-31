@@ -15,12 +15,12 @@ const ProgramsSection = ({ programs, locale }) => {
 
     heading: {
       container: `flex items-center justify-between mb-12`,
-      title: `heading-02`,
+      title: `heading-02 mobile:text-center`,
       action: `mobile:hidden`,
     },
 
     programs: {
-      container: `grid grid-cols-3 mobile:grid-cols-1 gap-x-5 gap-y-11 pt-6`,
+      container: `grid grid-cols-3 tablet:grid-cols-2 tablet:justify-center mobile:grid-cols-1 gap-x-5 gap-y-11 pt-6`,
       action: `hidden mobile:block w-full`,
     },
   };

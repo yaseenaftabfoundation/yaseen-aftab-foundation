@@ -4,6 +4,7 @@ import { Card, CardBody, CardFooter, CardHeader, Button } from "@/app/material";
 import Image from "next/image";
 import moment from "moment";
 import Video from "./Video";
+import { Link } from "@/i18n/routing";
 
 const ProgramCard = ({ cover, video, title, slug, date, description, view, locale }) => {
   return (
@@ -16,11 +17,13 @@ const ProgramCard = ({ cover, video, title, slug, date, description, view, local
         <h4 className="heading-04 mb-4 text-black/50">{moment(date).locale(locale).format("LL")}</h4>
         <div
           dangerouslySetInnerHTML={{ __html: description }}
-          className="paragraph text-justify-forced !line-clamp-6"
+          className="paragraph text-justify-forced !line-clamp-4"
         />
       </CardBody>
       <CardFooter className="pt-0">
-        <Button>{view}</Button>
+        <Link href={`/programs/${slug}`}>
+          <Button>{view}</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

@@ -3,11 +3,10 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { IoPlay } from "react-icons/io5";
-import { getIframeURL } from "@/utils/getIframeURL";
-import { IconButton } from "@material-tailwind/react";
-import { Dialog, DialogBody, DialogHeader } from "@/app/material";
-import Image from "next/image";
 import { MdClose } from "react-icons/md";
+import { IconButton, Spinner } from "@material-tailwind/react";
+import { Dialog, DialogBody, DialogHeader } from "@material-tailwind/react";
+import Image from "next/image";
 import ReactPlayer from "react-player";
 
 const Video = ({ thumbnail, thumbnailSize, video, thumbnailStyles }) => {
@@ -36,6 +35,7 @@ const Video = ({ thumbnail, thumbnailSize, video, thumbnailStyles }) => {
 
     video: {
       container: ``,
+      spinner: `h-8 w-8 absolute -z-[1]`,
     },
   };
 
@@ -54,13 +54,17 @@ const Video = ({ thumbnail, thumbnailSize, video, thumbnailStyles }) => {
       {/* video */}
       <Dialog size="xl" open={openVideoModal} handler={handleVideoModal} className="bg-transparent shadow-none">
         <DialogHeader onClick={handleVideoModal} className="justify-end">
+          {/* close button */}
           <IconButton variant="text" size="sm" className="text-3xl text-white">
             <MdClose />
           </IconButton>
         </DialogHeader>
 
-        <DialogBody className="mobile:w-full aspect-video p-0 rounded-xl overflow-hidden">
+        <DialogBody className="mobile:w-full aspect-video p-0 rounded-xl overflow-hidden flex justify-center items-center">
+          {/* youtube video player */}
           <ReactPlayer url={video} controls playing width="100%" height="100%" />
+          {/* spinner */}
+          <Spinner color="teal" className={styles.video.spinner} />
         </DialogBody>
       </Dialog>
     </>

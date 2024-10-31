@@ -29,7 +29,7 @@ const HeroSection = ({ slides }) => {
         loop={true}
         autoplay={true}
         autoplayDelay={8000}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeOut", duration: 0.6 }}
         className={styles.carousel}
       >
         {slides.map((slide, index) => (
